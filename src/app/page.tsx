@@ -5,9 +5,9 @@ export default function Home() {
     { name: "Ride-Share Trip Details (Mobile)", path: "/ride-trip-details" },
     { name: "Art Showcase Landing", path: "/art-showcase" },
     { name: "Developer Portfolio Landing", path: "/developer-portfolio" },
-    { name: "Finance Dashboard Landing", path: "/finance-dashboard" },
-    { name: "Real Estate Investment Landing", path: "/real-estate" },
-    { name: "Travel App Landing", path: "/travel-app" },
+    { name: "Finance Dashboard Landing", path: "/finance-landing" },
+    { name: "Real Estate Investment Landing", path: "/real-estate-landing" },
+    { name: "Travel App Landing", path: "/travel-landing" },
     { name: "Pricing Plans", path: "/pricing-plans" },
   ];
 
