@@ -1,0 +1,89 @@
+<svg width="600" height="800" viewBox="0 0 600 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="300" y1="0" x2="300" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFC5B2" />
+      <stop offset="45%" stop-color="#FFA48B" />
+      <stop offset="100%" stop-color="#FF7F62" />
+    </linearGradient>
+    
+    <radialGradient id="sunGlow" cx="300" cy="340" r="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFF2EE" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#FFD4C8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#FFA48B" stop-opacity="0" />
+    </radialGradient>
+    
+    <filter id="noiseFilter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.06 0" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="url(#bgGrad)" />
+  <circle cx="300" cy="340" r="150" fill="url(#sunGlow)" />
+
+  <!-- Grain Overlay -->
+  <rect width="600" height="800" filter="url(#noiseFilter)" />
+
+  <!-- Japanese Minimalist Editorial Typography -->
+  <text x="50" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" letter-spacing="3" fill="#ffffff" opacity="0.85">SERIES NO. 04 / 2024</text>
+  <text x="550" y="70" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" letter-spacing="2" fill="#ffffff" opacity="0.85">スケートボード</text>
+
+  <!-- Stylized Cloud / Fog Waves at Bottom -->
+  <path d="M-20 620 C60 590 120 630 190 610 C270 590 320 640 400 615 C480 590 540 630 620 600 V800 H-20 Z" fill="#2E2836" opacity="0.5" />
+  <path d="M-20 660 C80 630 160 670 240 640 C330 610 390 660 480 635 C540 620 580 640 620 630 V800 H-20 Z" fill="#1C1824" />
+
+  <!-- Skater Character Mid-Air -->
+  <g transform="translate(180, 220)">
+    <!-- Motion Lines / Speed streaks -->
+    <path d="M-40 180 L20 160" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.6" />
+    <path d="M-20 220 L40 200" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.7" />
+    <path d="M10 260 L80 235" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.5" />
+
+    <!-- Skateboard Tilted in Kickflip -->
+    <g transform="translate(70, 240) rotate(-22)">
+      <!-- Board Deck -->
+      <rect x="-90" y="-8" width="180" height="16" rx="8" fill="#1B1722" />
+      <rect x="-85" y="-6" width="170" height="12" rx="6" fill="#F87171" />
+      <!-- Grip Tape Strip -->
+      <line x1="-30" y1="-8" x2="-30" y2="8" stroke="#1B1722" stroke-width="3" />
+      <line x1="30" y1="-8" x2="30" y2="8" stroke="#1B1722" stroke-width="3" />
+      <!-- Trucks & Wheels -->
+      <rect x="-62" y="8" width="14" height="6" fill="#D1D5DB" />
+      <rect x="48" y="8" width="14" height="6" fill="#D1D5DB" />
+      <circle cx="-68" cy="16" r="8" fill="#FBBF24" />
+      <circle cx="-42" cy="16" r="8" fill="#FBBF24" />
+      <circle cx="42" cy="16" r="8" fill="#FBBF24" />
+      <circle cx="68" cy="16" r="8" fill="#FBBF24" />
+    </g>
+
+    <!-- Character Body -->
+    <!-- Legs -->
+    <path d="M90 180 L70 215 L50 218" stroke="#1E1B24" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M130 180 L145 205 L160 200" stroke="#1E1B24" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Yellow/Cyan Sneakers -->
+    <path d="M42 222 L62 216 L65 224 L45 228 Z" fill="#FBBF24" rx="2" />
+    <path d="M152 205 L172 198 L175 206 L155 210 Z" fill="#FBBF24" rx="2" />
+
+    <!-- Oversized Hoodie / Jacket -->
+    <path d="M65 110 C65 110 50 145 70 185 C90 195 140 195 155 180 C170 145 155 110 155 110 Z" fill="#3B82F6" />
+    <path d="M95 105 C95 105 110 135 125 105 Z" fill="#2563EB" />
+
+    <!-- Arms Spread for Balance -->
+    <path d="M68 120 L25 95 L5 105" stroke="#3B82F6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M152 120 L195 105 L215 85" stroke="#3B82F6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="2" cy="106" r="6" fill="#FDE68A" />
+    <circle cx="218" cy="83" r="6" fill="#FDE68A" />
+
+    <!-- Head & Cap -->
+    <circle cx="110" cy="82" r="18" fill="#FDE68A" />
+    <!-- Backward Cap in Bright Coral -->
+    <path d="M92 76 C94 60 126 60 128 76 C134 78 142 82 144 86 L124 84 Z" fill="#EF4444" />
+    <!-- Sunglasses -->
+    <rect x="94" y="80" width="14" height="6" rx="2" fill="#1E1B24" />
+  </g>
+
+  <!-- Bottom Details -->
+  <text x="300" y="740" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" letter-spacing="4" fill="#FFFFFF" opacity="0.95">SUNSET GRAVITY</text>
+  <text x="300" y="765" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" letter-spacing="2" fill="#FFFFFF" opacity="0.7">PALLET ROSS EDITIONS</text>
+</svg>
