@@ -16,38 +16,41 @@ export default function FinanceDashboard() {
       {/* ---------------------------------------------------- */}
       <header className="w-full border-b border-transparent">
         <nav className="flex items-center justify-between px-6 sm:px-10 lg:px-16 py-6 max-w-[1400px] mx-auto">
-          {/* Brand Logo */}
-          <Link href="/finance-landing" className="flex items-center gap-2.5 group">
-            {/* FinSuite Cute Wallet / Card Icon */}
-            <div className="relative w-8 h-8 flex items-center justify-center">
-              {/* Back Card: Lime Accent */}
-              <div className="absolute top-0.5 right-1 w-5 h-3 bg-[#BAF84B] rounded-sm transform -rotate-12 transition-transform group-hover:rotate-0" />
-              {/* Front Card / Wallet: Rich Blue */}
-              <div className="relative w-7 h-5.5 bg-[#2563EB] rounded-[7px] shadow-sm flex items-center justify-center">
-                <div className="w-3.5 h-1 bg-white/40 rounded-full" />
+          {/* Left: Brand Logo + Navigation Links */}
+          <div className="flex items-center gap-10 lg:gap-14">
+            {/* Brand Logo */}
+            <Link href="/finance-landing" className="flex items-center gap-2.5 group shrink-0">
+              {/* FinSuite Cute Wallet / Card Icon */}
+              <div className="relative w-8 h-8 flex items-center justify-center">
+                {/* Back Card: Lime Accent */}
+                <div className="absolute top-0.5 right-1 w-5 h-3 bg-[#BAF84B] rounded-sm transform -rotate-12 transition-transform group-hover:rotate-0" />
+                {/* Front Card / Wallet: Rich Blue */}
+                <div className="relative w-7 h-5.5 bg-[#2563EB] rounded-[7px] shadow-sm flex items-center justify-center">
+                  <div className="w-3.5 h-1 bg-white/40 rounded-full" />
+                </div>
               </div>
-            </div>
-            <span className="font-bold text-[22px] tracking-tight text-[#0B0F19]">FinSuite</span>
-          </Link>
+              <span className="font-bold text-[22px] tracking-tight text-[#0B0F19]">FinSuite</span>
+            </Link>
 
-          {/* Navigation Links */}
-          <div className="hidden md:flex items-center gap-9 text-[14.5px] font-medium text-[#64748B]">
-            <Link href="#" className="text-[#0B0F19] font-semibold transition-colors">
-              Home
-            </Link>
-            <Link href="#" className="hover:text-[#0B0F19] transition-colors">
-              About Us
-            </Link>
-            <Link href="#" className="hover:text-[#0B0F19] transition-colors">
-              Blog
-            </Link>
-            <div className="relative group cursor-pointer flex items-center gap-1 hover:text-[#0B0F19] transition-colors">
-              <span>Pages</span>
-              <ChevronDown size={14} className="stroke-[2.5] text-[#94A3B8] group-hover:text-[#0B0F19] transition-colors" />
+            {/* Navigation Links (Left-aligned) */}
+            <div className="hidden md:flex items-center gap-8 lg:gap-9 text-[14.5px] font-medium text-[#64748B]">
+              <Link href="#" className="text-[#0B0F19] font-semibold transition-colors">
+                Home
+              </Link>
+              <Link href="#" className="hover:text-[#0B0F19] transition-colors">
+                About Us
+              </Link>
+              <Link href="#" className="hover:text-[#0B0F19] transition-colors">
+                Blog
+              </Link>
+              <div className="relative group cursor-pointer flex items-center gap-1 hover:text-[#0B0F19] transition-colors">
+                <span>Pages</span>
+                <ChevronDown size={14} className="stroke-[2.5] text-[#94A3B8] group-hover:text-[#0B0F19] transition-colors" />
+              </div>
+              <Link href="#" className="hover:text-[#0B0F19] transition-colors">
+                Pricing
+              </Link>
             </div>
-            <Link href="#" className="hover:text-[#0B0F19] transition-colors">
-              Pricing
-            </Link>
           </div>
 
           {/* Right Action CTAs */}
